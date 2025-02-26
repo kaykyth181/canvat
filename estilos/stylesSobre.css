@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do body */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  }
+
+  #fotomim img {
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    border: 2px solid #007BFF;
+    border-radius:60%; /* Forma de círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+  }

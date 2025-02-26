@@ -1,0 +1,240 @@
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* Faz imagens e elementos de mídia se ajustarem ao tamanho do container */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  /* Garante que os inputs usem a mesma fonte */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Remove o estilo padrão dos links */
+}
+
+ul,
+ol {
+  list-style: none;
+  /* Remove os marcadores */
+}
+
+/* FIM DO RESET CSS */
+
+/* Estilos para o body */
+body {
+  margin: 20px;
+  background: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conteúdo do body */
+  align-items: center;
+  /* Alinha o conteúdo verticalmente */
+  min-height: 100vh;
+  /* Garante que o body ocupe toda a altura da tela */
+}
+
+/* Estilos gerais para a classe texto */
+.texto {
+  text-align: center;
+}
+
+.titulo {
+  padding-bottom: 50px;
+  font-size: 3rem;
+  /* Tamanho maior do título */
+  font-family: 'Yuji Mai', serif;
+}
+
+.nome {
+  border: 0.2px solid white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #007BFF;
+  /* Cor inicial */
+  transition: background-color 0.3s ease;
+  /* Transição suave */
+ 
+
+}
+
+.nome:hover {
+  background-color: #5edfdf; /* Cor ao passar o mouse */
+}
+#eu .nome{
+  text-decoration: none;
+  color: inherit;
+  outline: none; /* Remove o contorno do link */
+}
+
+
+
+/* Estilo para o container #eu */
+#eu {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que os itens se ajustem em várias linhas se necessário */
+  gap: 50px;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 100%;
+  /* Faz o contêiner ocupar toda a altura da página */
+}
+
+/* Estilo para a foto */
+.fotoeu img {
+  width: 300px;
+  height: 300px;
+  background-color: lightblue;
+  border: 2px solid #007BFF;
+  border-radius: 50%;
+  /* Forma de círculo */
+  transform: rotate(-50deg);
+  /* Gira a imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Estilo para o container da foto */
+.fotoeu {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+.fotoeu .trabs{
+  text-decoration: none;
+  color: inherit;
+  outline: none; /* Remove o contorno do link */
+}
+
+.trabs {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #007BFF;
+  /* Cor azul para o texto */
+  cursor: pointer;
+
+}
+
+.trabs svg {
+  margin-right: 10px;
+}
+
+
+/* teste */
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+
+  /* Ajustes em telas médias (tablets) */
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .fotoeu img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    /* Centraliza horizontalmente a imagem */
+  }
+
+  .nome {
+    width: 80%;
+    /* Ajusta o nome para 80% da largura da tela */
+  }
+
+  /* Centraliza a imagem e coloca o texto abaixo */
+  #eu {
+    flex-direction: column;
+    /* Coloca os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+    gap: 20px;
+    /* Espaçamento entre a imagem e o texto */
+  }
+
+  .fotoeu {
+    display: flex;
+    flex-direction: column;
+    /* Coloca o texto "Trabalhe comigo" abaixo da imagem */
+    align-items: center;
+    /* Centraliza o texto */
+    gap: 10px;
+    /* Espaçamento entre o ícone e o texto */
+    font-size: 1.2rem;
+    color: #007BFF;
+  }
+
+  .fotoeu .trabs {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Ajustes em telas pequenas (celulares) */
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .fotoeu img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+
+  #eu {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nome {
+    width: 90%;
+    /* Ajusta a largura do nome para 90% da tela */
+  }
+}
