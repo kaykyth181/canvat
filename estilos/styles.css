@@ -136,7 +136,7 @@ body {
 }
 
 .fotoeu .trabs{
-  text-decoration: none;
+  /* text-decoration: none; */
   color: inherit;
   outline: none; /* Remove o contorno do link */
 }
@@ -154,6 +154,7 @@ body {
 
 .trabs svg {
   margin-right: 10px;
+  
 }
 
 
