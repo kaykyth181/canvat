@@ -31,11 +31,6 @@ select {
   /* Garante que os inputs usem a mesma fonte */
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  /* Remove o estilo padrão dos links */
-}
 
 ul,
 ol {
@@ -134,12 +129,12 @@ body {
   align-items: baseline;
 
 }
-
+/* 
 .fotoeu .trabs{
-  /* text-decoration: none; */
+  text-decoration: none;
   color: inherit;
-  outline: none; /* Remove o contorno do link */
-}
+  outline: none; /* Remove o contorno do link 
+} */
 
 .trabs {
   display: flex;
@@ -152,10 +147,6 @@ body {
 
 }
 
-.trabs svg {
-  margin-right: 10px;
-  
-}
 
 
 /* teste */

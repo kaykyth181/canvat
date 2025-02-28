@@ -1,37 +1,43 @@
 body {
-  
+
   margin: 20px;
   background: black;
   color: aliceblue;
-  
+
   /* Garante que o body ocupe toda a altura da tela */
-  
+
 }
 
 
-.naveg ul li a{
+.naveg ul li a {
   text-decoration: none;
   color: inherit;
-  outline: none; /* Remove o contorno do link */
+  outline: none;
+  /* Remove o contorno do link */
 }
-.naveg ul{
-  list-style-type: none; /* Remove as marcações padrão das listas */
+
+.naveg ul,
+.sobreeu ul {
+  list-style-type: none;
+  /* Remove as marcações padrão das listas */
   display: flex;
   align-items: baseline;
   flex-direction: column;
 }
+
 .naveg ul li {
   padding-top: 4px;
-  
+
 }
-.naveg{
+
+.naveg {
   position: absolute;
   background: #016cdf;
   box-shadow: -10px 10px 5px #3d3b3b;
   border-radius: 50%;
 }
 
-#material{
+#material {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
@@ -41,7 +47,7 @@ body {
 #material #fotomim img {
   display: flex;
   justify-content: center;
-  height: 100vh; 
+  height: 100vh;
   height: 300px;
   width: 300px;
   background-color: lightblue;
@@ -50,12 +56,13 @@ body {
   /* Forma de círculo */
   font-size: 16px;
   color: #fff;
-  
+
 }
 
 #material #fotomim {
   display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
 
 }
 
@@ -63,8 +70,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to right, rgb(0, 0, 0), blue);
+  z-index: 1;
+  margin-left: -20px;
+  /* Compensa a margem do body */
+  margin-right: -20px;
+}
+
+#sobremim {
+  margin-top: 20px;
 }
 
 .sobreeu h2 {
   margin-top: 50px;
+  font-size: 40px;
+
+
+}
+
+.sobreeu ul li {
+  font-size: 40px;
+  background: black;
+  width: 100%;
+  padding: 5px;
+  border-radius: 50%;
 }
