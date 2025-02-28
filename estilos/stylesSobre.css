@@ -30,11 +30,19 @@ body {
 
 }
 
-.naveg {
-  position: absolute;
-  background: #016cdf;
-  box-shadow: -10px 10px 5px #3d3b3b;
+.naveg ul li:hover {
+  background: #007BFF;
   border-radius: 50%;
+  color:rgb(0, 0, 0);
+  box-shadow: 0 0 10px #c7e2ff41;
+}
+
+.naveg {
+  position: fixed;
+  background: #016cdf;
+  box-shadow: -10px 10px 5px #3d3b3b88;
+  border-radius: 50%;
+  z-index: 1000;
 }
 
 #material {
