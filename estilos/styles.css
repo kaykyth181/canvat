@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 html,
@@ -67,26 +67,33 @@ body {
 }
 
 .nome {
-  border: 0.2px solid white;
+  border: none;
   border-radius: 20px;
   text-align: center;
-  padding: 10px;
+  padding: 15px 30px;
   font-size: 1.2rem;
   background-color: #007BFF;
   /* Cor inicial */
   transition: background-color 0.3s ease;
   /* Transição suave */
+
+  box-shadow: 0 5px #0056b3;
+  /* Sombra para dar o efeito de profundidade */
+  cursor: pointer;
  
 
 }
 
 .nome:hover {
-  background-color: #5edfdf; /* Cor ao passar o mouse */
+  background-color: #3e83eb9f; /* Cor ao passar o mouse */
+  box-shadow: 0 5px #022346;
 }
-#eu .nome{
+
+#eu .nome {
   text-decoration: none;
   color: inherit;
-  outline: none; /* Remove o contorno do link */
+  outline: none;
+  /* Remove o contorno do link */
 }
 
 
@@ -129,6 +136,7 @@ body {
   align-items: baseline;
 
 }
+
 /* 
 .fotoeu .trabs{
   text-decoration: none;
