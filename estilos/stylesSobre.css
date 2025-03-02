@@ -83,6 +83,7 @@ body {
   margin-left: -20px;
   /* Compensa a margem do body */
   margin-right: -20px;
+  margin-bottom: -20px;
 }
 
 #sobremim {
@@ -92,9 +93,13 @@ body {
 .sobreeu h2 {
   margin-top: 50px;
   font-size: 40px;
-
-
 }
+
+.sobreeu p{
+  font-size: 20px;
+  
+}
+
 
 .sobreeu ul li {
   font-size: 40px;

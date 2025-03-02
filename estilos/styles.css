@@ -84,9 +84,16 @@ body {
 
 }
 
+#insta:hover{
+  background: linear-gradient(to right, #db990b, blue);/* #d73eeb9f */; /* Cor ao passar o mouse */
+  box-shadow: 0 5px #db990b;
+  padding: 15px 25px;
+}
+
 .nome:hover {
   background-color: #3e83eb9f; /* Cor ao passar o mouse */
   box-shadow: 0 5px #022346;
+  padding: 15px 25px;
 }
 
 #eu .nome {
